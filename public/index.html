@@ -43,7 +43,12 @@
      socket.on('disconnect', () => {
      console.log("Perdimos la comunicación con el servidor", message);
    })
-    
+
+   socket.on('BANDS_LIST', (bands) => {
+    console.clear();
+     console.log("Lista de bandas", bands);
+   });
+
 </script>
 </body>
 </html>
